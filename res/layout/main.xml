@@ -1,12 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
+
+<RelativeLayout android:id="@+id/RelativeLayout01" 
+android:layout_width="fill_parent" 
+android:layout_height="fill_parent" 
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout android:id="@+id/LinearLayout02"
+	android:layout_width="fill_parent" 
+	android:layout_height="50px" >
+	<TextView android:text="Test" 
+		android:id="@+id/TextView02" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+		</TextView>
 </LinearLayout>
+
+<LinearLayout android:layout_height="50px" 
+	android:layout_width="fill_parent" 
+	android:id="@+id/LinearLayout01" 
+	android:layout_alignParentBottom="true">
+	<TextView android:layout_height="wrap_content" 
+		android:id="@+id/TextView01" 
+		android:text="Test" 
+		android:layout_width="wrap_content">
+	</TextView>
+</LinearLayout>
+
+
+<LinearLayout android:layout_height="100px" 
+	android:layout_width="100px" 
+	android:id="@+id/LinearLayout03" 
+	android:layout_alignParentLeft="true">
+	</LinearLayout>
+</RelativeLayout>
