@@ -3,11 +3,13 @@
 <RelativeLayout android:id="@+id/RelativeLayout01" 
 android:layout_width="fill_parent" 
 android:layout_height="fill_parent" 
-xmlns:android="http://schemas.android.com/apk/res/android">
+xmlns:android="http://schemas.android.com/apk/res/android"
+>
 
 <LinearLayout android:id="@+id/LinearLayout02"
 	android:layout_width="fill_parent" 
-	android:layout_height="50px" >
+	android:layout_height="50px" 
+	android:background="#EE2C2C">
 	<TextView android:text="Test" 
 		android:id="@+id/TextView02" 
 		android:layout_width="wrap_content" 
@@ -18,7 +20,9 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 <LinearLayout android:layout_height="50px" 
 	android:layout_width="fill_parent" 
 	android:id="@+id/LinearLayout01" 
-	android:layout_alignParentBottom="true">
+	android:layout_alignParentBottom="true"
+	android:background="#32CD32">
+	
 	<TextView android:layout_height="wrap_content" 
 		android:id="@+id/TextView01" 
 		android:text="Test" 
@@ -27,9 +31,13 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 </LinearLayout>
 
 
-<LinearLayout android:layout_height="100px" 
-	android:layout_width="100px" 
+<LinearLayout android:layout_height="fill_parent" 
+	android:layout_width="fill_parent" 
 	android:id="@+id/LinearLayout03" 
-	android:layout_alignParentLeft="true">
+	android:layout_alignParentLeft="true"
+	android:background="#FFD700"
+	android:layout_below="@id/LinearLayout02"
+	android:layout_marginBottom="50px"
+	>
 	</LinearLayout>
 </RelativeLayout>
