@@ -9,8 +9,10 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.Gallery;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 public class main extends Activity {
@@ -19,7 +21,15 @@ public class main extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        RelativeLayout test = (RelativeLayout)findViewById(R.id.LinearLayoutUnten);
+        test.setBackgroundResource(R.drawable.logo);
        
+        RelativeLayout test2 = (RelativeLayout) findViewById(R.id.RelativeLayout01);
+        test2.setBackgroundResource(R.drawable.background);
+        
+       // Button test3 =(Button) findViewById(R.id.Button01);
+       // test3.setBackgroundResource(R.drawable.icon);
+        
         Gallery g = (Gallery) findViewById(R.id.GalleryMitte);
         g.setAdapter(new ImageAdapter(this));
 

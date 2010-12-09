@@ -17,26 +17,25 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 		</TextView>
 </LinearLayout>
 
-<LinearLayout android:layout_height="50px" 
+<RelativeLayout android:layout_height="100px" 
 	android:layout_width="fill_parent" 
 	android:id="@+id/LinearLayoutUnten" 
 	android:layout_alignParentBottom="true"
-	android:background="#32CD32">
-	
-	<TextView android:layout_height="wrap_content" 
-		android:id="@+id/TextView01" 
-		android:text="Test" 
-		android:layout_width="wrap_content">
-	</TextView>
-</LinearLayout>
+	>
+	<Button 
+		android:id="@+id/Button01"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="lalalala"
+		android:layout_centerInParent="true"></Button>
+</RelativeLayout>
 
 
 <Gallery android:layout_height="fill_parent" 
 	android:layout_width="fill_parent" 
 	android:id="@+id/GalleryMitte" 
-	android:background="#FFD700"
 	android:layout_below="@id/LinearLayoutOben"
-	android:layout_marginBottom="50px"
+	android:layout_marginBottom="100px"
 	android:spacing="50px"
 	></Gallery>
 </RelativeLayout>
